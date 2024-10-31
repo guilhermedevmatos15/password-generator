@@ -28,47 +28,57 @@
       <link rel="stylesheet" href="./assets/css/styles.css">
       <!-- ? JS -->
       <script src="./assets/js/main.js" defer></script>
+      <!-- ? Font Awesome -->
+      <script src="https://kit.fontawesome.com/401b17d60b.js" crossorigin="anonymous"></script>
    </head>
    <body>
       <h1>Password generator</h1>
 
-      <main class="wrapper">
-         <div>
-            <h2>Personalize sua senha:</h2>
-         </div>
+      <section class="password">
+         <p>GSdsdad</p>
+         <i class="fa-solid fa-copy" title="Copy"></i>
+         <i class="fa-solid fa-arrows-rotate" title="Reset"></i>
+         <div class="status"></div>
+      </section>
+
+      <main class="customize">
+         <h2>Customize your password:</h2>
 
          <form action="#">
             <div>
                <label for="#characters"
                   >How many characters do you want your password to have?</label
                >
-               <input
-                  type="number"
-                  id="characters"
-                  name="characters"
-                  min="1"
-                  max="50"
-               />
-               <input type="range" />
+               <div>
+                  <input
+                     type="number"
+                     id="characters"
+                     name="characters"
+                     min="1"
+                     max="50"
+                     value="12"
+                  />
+                  <input type="range" min="1" max="50" step="1" value="12" />
+               </div>
             </div>
 
             <div>
                <ul>
                   <li>
-                     <input type="checkbox" name="options" id="option1" />
+                     <input type="checkbox" name="options" id="option1" checked />
                      <label for="option1">Uppercase</label>
                   </li>
                   <li>
-                     <input type="checkbox" name="options" id="option2" />
+                     <input type="checkbox" name="options" id="option2" checked />
                      <label for="option2">Lowecase</label>
                   </li>
                   <li>
-                     <input type="checkbox" name="options" id="option3" />
+                     <input type="checkbox" name="options" id="option3" checked />
                      <label for="option3">Numbers</label>
                   </li>
                   <li>
-                     <input type="checkbox" name="options" id="option4" />
-                     <label for="option4">Símbolos</label>
+                     <input type="checkbox" name="options" id="option4" checked />
+                     <label for="option4">Simbols</label>
                   </li>
                </ul>
             </div>
