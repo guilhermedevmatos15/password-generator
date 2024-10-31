@@ -1,0 +1,16 @@
+{
+  "name": "password-generator",
+  "version": "1.0.0",
+  "description": "Gerador de senhas",
+  "main": "assets/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass assets/scss/index.scss:assets/css/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.80.5"
+  }
+}
