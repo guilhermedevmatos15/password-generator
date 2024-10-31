@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Password generator</title>
+   </head>
+   <body>
+      <h1>Password generator</h1>
+
+      <main class="wrapper">
+         <div>
+            <h2>Personalize sua senha:</h2>
+         </div>
+
+         <form action="#">
+            <div>
+               <label for="#characters"
+                  >How many characters do you want your password to have?</label
+               >
+               <input
+                  type="number"
+                  id="characters"
+                  name="characters"
+                  min="1"
+                  max="50"
+               />
+               <input type="range" />
+            </div>
+
+            <div>
+               <ul>
+                  <li>
+                     <input type="checkbox" name="options" id="option1" />
+                     <label for="option1">Uppercase</label>
+                  </li>
+                  <li>
+                     <input type="checkbox" name="options" id="option2" />
+                     <label for="option2">Lowecase</label>
+                  </li>
+                  <li>
+                     <input type="checkbox" name="options" id="option3" />
+                     <label for="option3">Numbers</label>
+                  </li>
+                  <li>
+                     <input type="checkbox" name="options" id="option4" />
+                     <label for="option4">Símbolos</label>
+                  </li>
+               </ul>
+            </div>
+         </form>
+      </main>
+
+      <p>
+         Development by
+         <a
+            href="https://github.com/guilhermedevmatos15"
+            target="_blank"
+            rel="nofollow"
+            hreflang="en"
+            title="Go to Github"
+         >@guilhermedevmatos15</a>
+      </p>
+   </body>
+</html>
