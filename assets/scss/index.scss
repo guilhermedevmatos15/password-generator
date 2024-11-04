@@ -75,6 +75,19 @@ body {
          height: 8px;
          border-radius: 10px;
          background-color: gray;
+         
+         &.weak {
+            background-color: red;
+         }
+         &.avarage {
+            background-color: orange;
+         }
+         &.strong {
+            background-color: greenyellow;
+         }
+         &.very-strong {
+            background-color: green;
+         }
       }
    }
 
