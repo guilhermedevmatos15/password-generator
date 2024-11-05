@@ -75,7 +75,7 @@ body {
          height: 8px;
          border-radius: 10px;
          background-color: gray;
-         
+
          &.weak {
             background-color: red;
          }
@@ -102,7 +102,8 @@ body {
 
       h2 {
          position: relative;
-         width: max-content;
+         width: 100%;
+         max-width: max-content;
          font-size: 1.6rem;
          font-weight: 500;
          cursor: default;
@@ -194,6 +195,42 @@ body {
 
          &:hover {
             color: darken($color-01, 30%);
+         }
+      }
+   }
+}
+
+@media (max-width: 600px) {
+   :root {
+      font-size: 15px;
+   }
+
+   body {
+      padding: 50px 15px;
+
+      .customize {
+         form {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 30px;
+
+            > div:nth-child(1),
+            > div:nth-child(2) {
+               width: 100%;
+               justify-content: center;
+               align-items: center;
+               text-align: center;
+            }
+
+            > div:nth-child(1) {
+               div {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+               }
+            }
          }
       }
    }
